@@ -10,10 +10,10 @@ COPY requirements.txt /requirements.txt
 RUN pip install -r requirements.txt
 
 ENV LINE_MODEL_URL https://object-store.rc.nectar.org.au/v1/AUTH_bec3bd546fd54995896239e9ff3d4c4f/AIBugHunterModels/models/line_model.onnx
-
 ENV CWE_MODEL_URL https://object-store.rc.nectar.org.au/v1/AUTH_bec3bd546fd54995896239e9ff3d4c4f/AIBugHunterModels/models/cwe_model.onnx
-
 ENV SEV_MODEL_URL https://object-store.rc.nectar.org.au/v1/AUTH_bec3bd546fd54995896239e9ff3d4c4f/AIBugHunterModels/models/sev_model.onnx
+
+RUN git clone https://github.com/aibughunter/remote-inference-py
 
 ADD $LINE_MODEL_URL /line_model.onnx
 ADD $CWE_MODEL_URL /cwe_model.onnx

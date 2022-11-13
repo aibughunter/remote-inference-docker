@@ -1,3 +1,0 @@
-[submodule "inference-common"]
-	path = inference-common
-	url = git@github.com:aibughunter/inference-common.git
