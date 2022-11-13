@@ -1,5 +1,0 @@
-Flask
-numpy
-onnxruntime
-torch
-transformers
