@@ -1,0 +1,3 @@
+[submodule "remote-inference-py"]
+	path = remote-inference-py
+	url = https://github.com/aibughunter/remote-inference-py
